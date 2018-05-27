@@ -26,3 +26,4 @@ processed_tensor <- inception_v3_preprocess_input(img_tensor)
 # Make a prediction based on the model
 predictions <- model %>% predict(processed_tensor)
 imagenet_decode_predictions(predictions, top = 10)[[1]]
+
